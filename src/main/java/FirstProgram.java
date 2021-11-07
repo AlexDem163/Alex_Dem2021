@@ -2,6 +2,12 @@ public class FirstProgram {
 
     public static void main(String[] args) {
         System.out.println("Привет, мир123!");
+        System.out.println();
+        int itog = summa(3, 5);
+        System.out.println ("Результат суммы чисел: " + itog);
+        System.out.println();
+        long otherItog = summa(8, 45);
+        System.out.println ("Результат другой суммы чисел: " + otherItog);
     }
 
     /**
@@ -15,5 +21,6 @@ public class FirstProgram {
        // это однострочный коментарий
         /* это многострочный коментарий,
         его нужно открыть и закрыть */
+        return result;
     }
 }
