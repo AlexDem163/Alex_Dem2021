@@ -1,8 +1,8 @@
+package Lesson2;
+
 public class FirstProgram {
 
     public static void main(String[] args) {
-        System.out.println("Привет, мир123!");
-        System.out.println();
 
         int itog = summa(3, 5);
         System.out.println("Результат суммы чисел: " + itog);
@@ -12,7 +12,7 @@ public class FirstProgram {
         long minusItog = minus(45, 10);
         System.out.println("Результат разности чисел: " + minusItog);
 
-        double resaltVolume = sphereVolume(2);
+        double resaltVolume = sphereVolume(3);
         System.out.println("Объем сферы: " + resaltVolume);
     }
 
@@ -32,11 +32,11 @@ public class FirstProgram {
     }
 
     public static int minus(int arg1, int arg2) {
-        return arg1 - arg2;
+    return arg1 - arg2;
     }
 
     public static double sphereVolume(int arg1) {
-        return (4 * 3.14 * arg1 * arg1) / 3;
+    return (4 * 3.14 * arg1 * arg1) / 3;
     }
 
 }
