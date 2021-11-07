@@ -14,6 +14,7 @@ public class FirstProgram {
 
         double resaltVolume = sphereVolume(3);
         System.out.println("Объем сферы: " + resaltVolume);
+
     }
 
     /**
@@ -32,11 +33,10 @@ public class FirstProgram {
     }
 
     public static int minus(int arg1, int arg2) {
-    return arg1 - arg2;
+        return arg1 - arg2;
     }
 
     public static double sphereVolume(int arg1) {
-    return (4 * 3.14 * arg1 * arg1) / 3;
+        return (4 * 3.14 * arg1 * arg1) / 3;
     }
-
 }
