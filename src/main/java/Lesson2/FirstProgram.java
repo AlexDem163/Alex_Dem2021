@@ -14,6 +14,9 @@ public class FirstProgram {
 
         double resaltVolume = sphereVolume(3);
         System.out.println("Объем сферы: " + resaltVolume);
+
+        double Vol = Volume(3, 3);
+        System.out.println("Произведение: " + Vol);
     }
 
     /**
@@ -38,4 +41,10 @@ public class FirstProgram {
     public static double sphereVolume(int arg1) {
         return (4 * 3.14 * arg1 * arg1) / 3;
     }
+
+
+    public static double Volume(int arg1, int arg2) {
+        return Math.pow(arg1, arg2);
+    }
+
 }
