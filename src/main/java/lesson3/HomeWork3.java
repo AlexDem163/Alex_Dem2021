@@ -3,12 +3,14 @@ package lesson3;
 public class HomeWork3 {
 
     public static void main(String[] args) {
+        double a = -1;
+        double b = 2;
+        double c = -1;
+        oddsABC(a, b, c);
+    }
 
-        double a, b, c;
-        a = 5;
-        b = -6;
-        c = -9;
-        double d = b * b - (4 * a * c);
+    public static void oddsABC(double a, double b, double c) {
+        double d = (b * b - (4 * a * c));
         if (a == 0) {
             System.out.println("Первый коэффициент квадратного уравнения не может быть 0.");
         } else if (d > 0) {
@@ -19,7 +21,7 @@ public class HomeWork3 {
             double x;
             x = -b / (2 * a);
             System.out.println("Уравнение имеет одно решение - " + x);
-        } else if(d < 0) {
+        } else if (d < 0) {
             System.out.println("Нет действительных решений уравнения");
         }
     }
