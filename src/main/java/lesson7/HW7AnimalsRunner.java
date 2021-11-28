@@ -29,16 +29,36 @@ public class HW7AnimalsRunner {
         Beavers1 rio = new Beavers1("Rio", 2, 150, 400);
         Beavers1 horoHoro = new Beavers1("HoroHoro", 3, 400, 800);
 
-    }
-
-    public static void runSwim(int run) {
-        System.out.println("Введите длину участка по земле, целое число!");
-        Scanner scanner = new Scanner(System.in);
-        while (!scanner.hasNextInt()) {
-            System.out.println("Ожидается целое число. Повторите попытку!");
-            scanner.next();
+        Dogs[] dogss = new Dogs[]{bobik, sharik, gav};
+        for (Dogs dogs : dogss) {
+            if (300 <= dogs.run) {
+                System.out.println("Собака " + dogs.name + " пробежит 300");
+                if (300 <= dogs.swim) {
+                    System.out.println("Собака " + dogs.name + " проплывет 300");
+                }
+            }
         }
-        int index = scanner.nextInt();
-        System.out.println("Препятствие по суше" + index);
+
+        Cats[] catss = new Cats[]{kyzya, kiti, bandit};
+        for (Cats cats : catss) {
+            if (300 <= cats.run) {
+                System.out.println("Кошка " + cats.name + " пробежит 300");
+                if (300 <= cats.swim) {
+                    System.out.println("Кошка " + cats.name + " проплывет 300");
+                }
+            }
+        }
+
+        Beavers1[] beavers1s = new Beavers1[]{chroom, rio, horoHoro};
+        for (Beavers1 beaver : beavers1s) {
+            if (300 <= beaver.run) {
+                System.out.println("Бобр " + beaver.name + " пробежит 300");
+                if (300 <= beaver.swim) {
+                    System.out.println("Бобр " + beaver.name + " проплывет 300");
+                }
+            }
+        }
+
     }
 }
+
