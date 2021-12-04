@@ -1,6 +1,6 @@
 package lesson8;
 
-public class Animal {
+public abstract class Animal {
 
     private String name;
     private int age;
@@ -12,11 +12,11 @@ public class Animal {
         this.sex = sex;
     }
 
-    public void chengeName(String newName) {
+    public void changeName(String newName) {
         this.name = newName;
     }
 
-    public void chengeSex() {
+    public void changeSex() {
         this.sex = !sex;
     }
 

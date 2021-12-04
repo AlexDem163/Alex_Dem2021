@@ -1,8 +1,8 @@
 package lesson8;
 
-public class Dag extends Animal{
+public class Dog extends Animal {
 
-    public Dag(String name, int age, boolean sex) {
+    public Dog(String name, int age, boolean sex) {
         super(name, age, sex);
     }
 
