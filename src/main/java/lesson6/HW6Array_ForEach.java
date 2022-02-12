@@ -18,7 +18,7 @@ public class HW6Array_ForEach {
         System.out.println("----------");
         System.out.print("Массив состоит из следующих элементов: ");
         for (int i = 0; i < array.length; i++) {
-            System.out.print(i + "|");
+            System.out.print(array[i] + "|");
         }
     }
 
